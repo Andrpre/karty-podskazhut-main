@@ -63,3 +63,70 @@ figure {
 .content__text-block{
     font-size: 18px;
 }
+
+.content__text-block > .content__paragraph:not(:last-child){
+    margin-block-end: 1.5em;
+}
+
+.content__blockquote{
+    inline-size: 75%;
+    font-style: italic;
+    line-height: 200%;
+    margin-block-end: 1.5em;
+    margin-inline: auto;
+}
+
+.content__paragraph-link{
+    color: inherit;
+}
+
+.content__list{
+    list-style: none;
+    padding-inline-start: 40px;
+}
+
+.content__list-item{
+    position: relative;
+}
+
+.content__list-item::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    inset-inline-start: -25px;
+    inset-block-start: 3px;
+    block-size: 15px;
+    inline-size: 15px;
+    background-image: url(../images/marker-light.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content__list-item:not(:last-child){
+    margin-block-end: 10px;
+}
+
+.content__text-block_type_first-lettered > .content__paragraph:first-child:first-letter {
+    background-color: var(--accent-color);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 4px;
+    margin: 0 3px 0 0;
+}
+
+.content__figure{
+    margin-block: 7%;
+    inline-size: calc(100% + 10vi);
+    position: relative;
+    inset-inline-start: -5vi;
+}
+
+.content__picture{
+    inline-size: 100%;
+}
+
+.content__picture-caption{
+    padding-block: 20px;
+    text-align: center;
+    border-bottom: 1px solid #312A4E;
+}
