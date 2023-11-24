@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.page {
+    --bg-color: #f3efec;
+    --text-color: #312a4e;
+    --accent-color: #ffab6b;
+    --main-font: Raleway, Arial, Helvetica, sans-serif;
+    --accent-font: "STIX Two Text", Arial, Helvetica, sans-serif;
+    min-inline-size: 360px;
+    margin: 0;
+    background-color: var(--bg-color, #f3efec);
+    color: var(--text-color, #312a4e);
+    font-family: var(--main-font, Raleway, Arial, Helvetica, sans-serif);
+}
+
+.theme_dark {
+    
+}
+
+.heading{
+  text-align: center;
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%;
+}
+
+.content-section{
+    padding: 0 5vi;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+    margin: 0;
+}
+
+.header{
+    padding-block-start: 10vi;
+}
+
+.header__title{
+    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+    margin-block-end: 40px;
+}
+
+.content__title{
+    font-size: 30px;
+    margin-block-start: 7vi;
+    margin-block-end: 2.5vi;
+}
+
+.content__text-block{
+    font-size: 18px;
+}
