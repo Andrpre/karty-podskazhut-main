@@ -128,5 +128,23 @@ figure {
 .content__picture-caption{
     padding-block: 20px;
     text-align: center;
-    border-bottom: 1px solid #312A4E;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.content__card{
+    margin-block-start: 7%;
+    border: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+}
+
+.content__card-title{
+    font-size: 60px;
+}
+
+.content__card-subtitle{
+    font-size: 18px;
 }
